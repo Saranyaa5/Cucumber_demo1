@@ -8,19 +8,26 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginStepDefSauceDemo {
-	
+
 	public WebDriver driver ;
-	@Given("the user in on Login page")
-	public void the_user_in_on_login_page() {
+	@Before
+	public void setup() {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.saucedemo.com/v1/index.html");
+	}
+	
+	@Given("the user in on Login page")
+	public void the_user_in_on_login_page() {
+		
 	}
 
 	@When("the user provides the valid username")
@@ -61,7 +68,7 @@ public class LoginStepDefSauceDemo {
 	public void the_user_is_able_to_visible_the_error_message() {
 		WebElement error = driver.findElement(By.xpath("//div[@id=\"login_button_container\"]/div/form/h3"));
 		System.out.println("---------------"+error.getText()+"---------------");
-		driver.quit();
+		
 	}
 
 	@When("the user provides the blank password")
@@ -81,6 +88,11 @@ public class LoginStepDefSauceDemo {
 		WebElement password = driver.findElement(By.id("password"));
 		password.sendKeys("secret_saucess");
 	}
+	@After
+	public void tearup() {
+		driver.quit();
+	}
+	
 
 
 }
