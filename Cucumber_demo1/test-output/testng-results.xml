@@ -1,53 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-02T12:50:20 IST" name="Default suite" finished-at="2025-04-02T12:50:50 IST" duration-ms="29973">
+  <suite started-at="2025-04-02T17:10:50 IST" name="Suite" finished-at="2025-04-02T17:13:38 IST" duration-ms="167703">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@45c7e403]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@4e08711f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-04-02T12:50:20 IST" name="Default test" finished-at="2025-04-02T12:50:50 IST" duration-ms="29973">
+    <test started-at="2025-04-02T17:10:50 IST" name="Test" finished-at="2025-04-02T17:13:38 IST" duration-ms="167703">
       <class name="runner.runnerTestNG">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.runnerTestNG@45c7e403]" started-at="2025-04-02T12:50:20 IST" name="setUpClass" finished-at="2025-04-02T12:50:20 IST" duration-ms="233" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.runnerTestNG@4e08711f]" started-at="2025-04-02T17:10:50 IST" name="setUpClass" finished-at="2025-04-02T17:10:50 IST" duration-ms="383" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@75769ab0]]>
+                <![CDATA[org.testng.TestRunner@4a50d04a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@45c7e403]" started-at="2025-04-02T12:50:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T12:50:20 IST" duration-ms="154" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@4e08711f]" started-at="2025-04-02T17:10:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T17:10:59 IST" duration-ms="8360" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with valid credentials"]]>
+                <![CDATA["To test login features of Sauce Demo website"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Login feature"]]>
+                <![CDATA["Login functionality for SauceDemo"]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
-at stepDefinitions.LoginStepDefSauceDemo.tearup(LoginStepDefSauceDemo.java:101)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@45c7e403]" started-at="2025-04-02T12:50:20 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T12:50:31 IST" duration-ms="10745" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@4e08711f]" started-at="2025-04-02T17:10:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T17:11:16 IST" duration-ms="16782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test login features of Sauce Demo website"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality for SauceDemo"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@4e08711f]" started-at="2025-04-02T17:11:16 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T17:11:32 IST" duration-ms="16578" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test login features of Sauce Demo website"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality for SauceDemo"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@4e08711f]" started-at="2025-04-02T17:11:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T17:11:49 IST" duration-ms="16653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To test login features of Sauce Demo website"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login functionality for SauceDemo"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@4e08711f]" started-at="2025-04-02T17:11:49 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T17:12:52 IST" duration-ms="63456" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -63,7 +101,7 @@ at stepDefinitions.LoginStepDefSauceDemo.tearup(LoginStepDefSauceDemo.java:101)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@45c7e403]" started-at="2025-04-02T12:50:31 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T12:50:50 IST" duration-ms="18545" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@4e08711f]" started-at="2025-04-02T17:12:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T17:13:04 IST" duration-ms="11278" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,7 +117,7 @@ at stepDefinitions.LoginStepDefSauceDemo.tearup(LoginStepDefSauceDemo.java:101)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@45c7e403]" started-at="2025-04-02T12:50:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T12:50:50 IST" duration-ms="5" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@4e08711f]" started-at="2025-04-02T17:13:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T17:13:28 IST" duration-ms="24042" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -92,21 +130,10 @@ at stepDefinitions.LoginStepDefSauceDemo.tearup(LoginStepDefSauceDemo.java:101)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at stepDefinitions.LoginStepDefSauceDemo.the_user_provides_the_valid_username(LoginStepDefSauceDemo.java:43)
-at ✽.the user provides the valid username(file:///C:/Users/saran/git/Cucumber_demo1/Cucumber_demo1/src/test/resources/com/features/SaucedemoLogin.feature:23)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@45c7e403]" started-at="2025-04-02T12:50:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T12:50:50 IST" duration-ms="6" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runnerTestNG@4e08711f]" started-at="2025-04-02T17:13:28 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-02T17:13:37 IST" duration-ms="9715" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -119,25 +146,14 @@ at ✽.the user provides the valid username(file:///C:/Users/saran/git/Cucumber_
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at stepDefinitions.LoginStepDefSauceDemo.the_user_provides_the_invalid_username(LoginStepDefSauceDemo.java:90)
-at ✽.the user provides the invalid username(file:///C:/Users/saran/git/Cucumber_demo1/Cucumber_demo1/src/test/resources/com/features/SaucedemoLogin.feature:31)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.runnerTestNG@45c7e403]" started-at="2025-04-02T12:50:50 IST" name="tearDownClass" finished-at="2025-04-02T12:50:50 IST" duration-ms="227" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.runnerTestNG@4e08711f]" started-at="2025-04-02T17:13:37 IST" name="tearDownClass" finished-at="2025-04-02T17:13:38 IST" duration-ms="380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- runner.runnerTestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

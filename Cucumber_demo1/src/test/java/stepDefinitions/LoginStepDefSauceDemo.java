@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 
@@ -20,6 +21,7 @@ public class LoginStepDefSauceDemo {
 	public WebDriver driver ;
 	@Before("@chrome")
 	public void setup1() {
+		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -27,6 +29,8 @@ public class LoginStepDefSauceDemo {
 	}
 	@Before("@edge")
 	public void setup2() {
+		ChromeOptions option= new ChromeOptions();
+		option.addArguments("--headless");
 		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
