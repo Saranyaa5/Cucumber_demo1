@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 
 import io.cucumber.java.After;
@@ -17,9 +18,16 @@ import io.cucumber.java.en.When;
 public class LoginStepDefSauceDemo {
 
 	public WebDriver driver ;
-	@Before
-	public void setup() {
+	@Before("@chrome")
+	public void setup1() {
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://www.saucedemo.com/v1/index.html");
+	}
+	@Before("@edge")
+	public void setup2() {
+		driver = new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.saucedemo.com/v1/index.html");
@@ -89,10 +97,17 @@ public class LoginStepDefSauceDemo {
 		password.sendKeys("secret_saucess");
 	}
 	@After
-	public void tearup() {
+	public void teardown() {
 		driver.quit();
 	}
-	
+//	@After("@chrome")
+//	public void tearup() {
+//		driver.quit();
+//	}
+//	@After("@edge")
+//	public void tearup1() {
+//		driver.quit();
+//	}
 
 
 }

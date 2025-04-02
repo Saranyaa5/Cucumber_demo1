@@ -1,7 +1,9 @@
 Feature: SauceDemo Feature
+
+Background:
   I want to use this template for my feature file
 
-@ValidCredentials
+@ValidCredentials @chrome
 	Scenario: To test Login features with valid username and password
 	Given the user in on Login page
 	When the user provides the valid username
@@ -9,7 +11,7 @@ Feature: SauceDemo Feature
 	And the user clicks the login button
 	Then the user is able to visible the ProductText in the same page 
 	
-@InValidCredentialsWithBlankUsername
+@InValidCredentialsWithBlankUsername @edge
 	Scenario: To test Login features with invalid username 
 	Given the user in on Login page
 	When the user provides the blank username
@@ -17,7 +19,7 @@ Feature: SauceDemo Feature
 	And the user clicks the login button
 	Then the user is able to visible the error message
 	
-@InValidCredentialsWithBlankPassword
+@InValidCredentialsWithBlankPassword @chrome @smoke
 	Scenario: To test Login features with invalid password 
 	Given the user in on Login page
 	When the user provides the valid username
@@ -25,7 +27,7 @@ Feature: SauceDemo Feature
 	And the user clicks the login button
 	Then the user is able to visible the error message
 	
-@InValidCredentials
+@InValidCredentials @edge
 	Scenario: To test Login features with invalid username and password
 	Given the user in on Login page
 	When the user provides the invalid username
